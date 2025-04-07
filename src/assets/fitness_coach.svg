@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Fitness coach figure -->
+  <circle cx="256" cy="120" r="70" fill="#805AD5" />
+  <rect x="216" y="190" width="80" height="160" rx="10" fill="#805AD5" />
+  <rect x="156" y="210" width="60" height="20" rx="10" fill="#805AD5" />
+  <rect x="296" y="210" width="60" height="20" rx="10" fill="#805AD5" />
+  <rect x="216" y="350" width="30" height="80" rx="5" fill="#805AD5" />
+  <rect x="266" y="350" width="30" height="80" rx="5" fill="#805AD5" />
+  
+  <!-- Dumbbells -->
+  <circle cx="136" cy="220" r="20" fill="#4A5568" />
+  <circle cx="376" cy="220" r="20" fill="#4A5568" />
+  
+  <!-- Motivational elements -->
+  <path d="M256 50 L266 70 L286 70 L270 85 L276 105 L256 95 L236 105 L242 85 L226 70 L246 70 Z" fill="#FFC107" />
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Plate -->
+  <circle cx="256" cy="256" r="150" fill="#E2E8F0" stroke="#4A5568" stroke-width="5" />
+  
+  <!-- Food items -->
+  <rect x="176" y="206" width="80" height="60" rx="10" fill="#68D391" />
+  <circle cx="296" cy="226" r="30" fill="#F56565" />
+  <path d="M216 286 Q 256 326 296 286" stroke="#805AD5" stroke-width="15" fill="none" stroke-linecap="round" />
+  
+  <!-- Fork and knife -->
+  <rect x="146" y="126" width="10" height="100" rx="5" fill="#4A5568" transform="rotate(-30 146 126)" />
+  <rect x="356" y="126" width="10" height="100" rx="5" fill="#4A5568" transform="rotate(30 356 126)" />
+  <path d="M356 126 L 376 106" stroke="#4A5568" stroke-width="10" stroke-linecap="round" />
+  <path d="M356 126 L 336 106" stroke="#4A5568" stroke-width="10" stroke-linecap="round" />
+  
+  <!-- Decorative elements -->
+  <circle cx="216" cy="186" r="5" fill="#4A5568" />
+  <circle cx="236" cy="186" r="5" fill="#4A5568" />
+  <circle cx="216" cy="206" r="5" fill="#4A5568" />
+  <circle cx="236" cy="206" r="5" fill="#4A5568" />
+</svg>
