@@ -24,7 +24,6 @@ interface UserProfile {
 
 interface AuthContextType {
   user: User | null;
-  login: (email: string, password: string) => Promise<void>;
   signup: (email: string, password: string, profile?: UserProfile) => Promise<void>;
   logout: () => void;
   isAuthenticated: boolean;
@@ -48,11 +47,7 @@ interface AuthProviderProps {
 export const AuthProvider = ({ children }: AuthProviderProps) => {
   const [user, setUser] = useState<User | null>(null);
 
-  const login = async (email: string) => {
-    // TODO: Implement actual authentication logic
-    // For now, simulate a successful login
-    setUser({ email, id: '1' });
-  };
+  // Login functionality removed as per requirements
 
   const signup = async (email: string, password: string, profile?: UserProfile) => {
     // TODO: Implement actual signup logic
@@ -80,7 +75,6 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
 
   const value = {
     user,
-    login,
     signup,
     logout,
     updateUserProfile,

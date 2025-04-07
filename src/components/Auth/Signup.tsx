@@ -18,7 +18,6 @@ import { useAuth } from '../../context/AuthContext';
 // Background image moved to Auth component
 
 interface SignupProps {
-  onSwitchToLogin: () => void;
   onSignupSuccess: () => void;
 }
 
@@ -41,7 +40,7 @@ interface SignupForm {
   targetWeightUnit: 'kg' | 'lbs';
 }
 
-export const Signup = ({ onSwitchToLogin, onSignupSuccess }: SignupProps) => {
+export const Signup = ({ onSignupSuccess }: SignupProps) => {
   const [form, setForm] = useState<SignupForm>({
     email: '',
     password: '',
@@ -520,16 +519,7 @@ export const Signup = ({ onSwitchToLogin, onSignupSuccess }: SignupProps) => {
           </VStack>
         </Box>
 
-        <Text textAlign="center">
-          Already have an account?{' '}
-          <Button
-            variant="link"
-            color="blue.500"
-            onClick={onSwitchToLogin}
-          >
-            Log in
-          </Button>
-        </Text>
+
       </VStack>
       </Box>
     </Box>

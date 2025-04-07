@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Box, useColorModeValue } from '@chakra-ui/react';
-import { Login } from './Login';
 import { Signup } from './Signup';
 import { UserProfileForm } from './UserProfileForm';
 import { useNavigate } from 'react-router-dom';
@@ -8,7 +7,6 @@ import { useAuth } from '../../context/AuthContext';
 import runningShoes from '../../assets/running_shoes.jpg';
 
 export const Auth = () => {
-  const [isLogin, setIsLogin] = useState(true);
   const [showProfileForm, setShowProfileForm] = useState(false);
   const [showAuth, setShowAuth] = useState(true);
   const navigate = useNavigate();
@@ -77,17 +75,9 @@ export const Auth = () => {
           onSkip={handleProfileSkip}
         />
       ) : showAuth ? (
-        isLogin ? (
-          <Login 
-            onSwitchToSignup={() => setIsLogin(false)}
-            onLoginSuccess={handleAuthSuccess}
-          />
-        ) : (
-          <Signup 
-            onSwitchToLogin={() => setIsLogin(true)}
-            onSignupSuccess={handleAuthSuccess}
-          />
-        )
+        <Signup 
+          onSignupSuccess={handleAuthSuccess}
+        />
       ) : null}
     </Box>
   );

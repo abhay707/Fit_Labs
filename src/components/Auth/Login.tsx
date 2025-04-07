@@ -12,7 +12,6 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 import { useState } from 'react';
-import { useAuth } from '../../context/AuthContext';
 
 interface LoginProps {
   onSwitchToSignup: () => void;
@@ -25,7 +24,7 @@ export const Login = ({ onSwitchToSignup, onLoginSuccess }: LoginProps) => {
   const [isLoading, setIsLoading] = useState(false);
   const [errors, setErrors] = useState({ email: '', password: '' });
   
-  const { login } = useAuth();
+  // const { login } = useAuth();
   const toast = useToast();
 
   const validateForm = () => {
@@ -59,13 +58,13 @@ export const Login = ({ onSwitchToSignup, onLoginSuccess }: LoginProps) => {
 
     setIsLoading(true);
     try {
-      await login(email, password);
-      toast({
-        title: 'Login successful',
-        status: 'success',
-        duration: 3000,
-        isClosable: true,
-      });
+      // await login(email, password);
+      // toast({
+      //   title: 'Login successful',
+      //   status: 'success',
+      //   duration: 3000,
+      //   isClosable: true,
+      // });
       if (onLoginSuccess) {
         onLoginSuccess();
       }

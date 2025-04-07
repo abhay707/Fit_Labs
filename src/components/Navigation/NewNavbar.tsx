@@ -151,33 +151,20 @@ export const NewNavbar = () => {
                 </MenuList>
               </Menu>
             ) : (
-              <>
-                <Button 
-                  as={RouterLink} 
-                  to="/login" 
-                  fontSize={'sm'} 
-                  fontWeight={400} 
-                  variant={'link'}
-                  color="white"
-                  _hover={{ color: 'blue.200' }}
-                >
-                  Sign In
-                </Button>
-                <Button
-                  as={RouterLink}
-                  to="/signup"
-                  display={{ base: 'none', md: 'inline-flex' }}
-                  fontSize={'sm'}
-                  fontWeight={600}
-                  color={'white'}
-                  bg={'blue.400'}
-                  _hover={{
-                    bg: 'blue.300',
-                  }}
-                >
-                  Sign Up
-                </Button>
-              </>
+              <Button
+                as={RouterLink}
+                to="/"
+                display={{ base: 'inline-flex', md: 'inline-flex' }}
+                fontSize={'sm'}
+                fontWeight={600}
+                color={'white'}
+                bg={'blue.400'}
+                _hover={{
+                  bg: 'blue.300',
+                }}
+              >
+                Sign Up
+              </Button>
             )}
           </Stack>
         </Flex>
