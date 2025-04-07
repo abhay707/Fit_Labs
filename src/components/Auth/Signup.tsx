@@ -64,7 +64,7 @@ export const Signup = ({ onSwitchToLogin, onSignupSuccess }: SignupProps) => {
   const [errors, setErrors] = useState<Partial<SignupForm>>({});
   const [isLoading, setIsLoading] = useState(false);
 
-  const { signup, updateUserProfile } = useAuth();
+  const { signup } = useAuth();
   const toast = useToast();
 
   const validateForm = () => {

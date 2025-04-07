@@ -21,14 +21,11 @@ import {
   CardHeader,
   CardBody,
   Badge,
-  Divider,
   useColorModeValue,
   FormErrorMessage,
-  Image,
 } from '@chakra-ui/react';
 import { EditIcon, CheckIcon, CloseIcon } from '@chakra-ui/icons';
 import { useAuth } from '../../context/AuthContext';
-import nutritionImage from '../../assets/nutrition.svg';
 import workoutBackground from '../../assets/Workout Photo Packermann.jpg';
 
 interface UserProfile {

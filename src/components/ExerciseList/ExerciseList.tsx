@@ -1,6 +1,5 @@
 import {
   Box,
-  VStack,
   Heading,
   Text,
   Badge,

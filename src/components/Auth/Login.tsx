@@ -13,8 +13,6 @@ import {
 } from '@chakra-ui/react';
 import { useState } from 'react';
 import { useAuth } from '../../context/AuthContext';
-import loginImage from '../../assets/login.svg';
-// Background image moved to Auth component
 
 interface LoginProps {
   onSwitchToSignup: () => void;
@@ -27,7 +25,6 @@ export const Login = ({ onSwitchToSignup, onLoginSuccess }: LoginProps) => {
   const [isLoading, setIsLoading] = useState(false);
   const [errors, setErrors] = useState({ email: '', password: '' });
   
-  const bgColor = useColorModeValue('white', 'gray.700');
   const { login } = useAuth();
   const toast = useToast();
 
