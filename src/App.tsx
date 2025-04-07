@@ -18,7 +18,7 @@ function AppContent() {
   const [selectedInjury, setSelectedInjury] = useState('');
   const [exercises, setExercises] = useState<Exercise[]>([]);
   const [showGoalExercises, setShowGoalExercises] = useState(false);
-  const { isAuthenticated, user } = useAuth();
+  const { isAuthenticated } = useAuth();
 
   const handleInjurySubmit = (injury: string) => {
     setSelectedInjury(injury);

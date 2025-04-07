@@ -14,7 +14,6 @@ import {
   ListItem,
   ListIcon,
   Icon,
-  Button,
 } from '@chakra-ui/react';
 import { CheckCircleIcon, CalendarIcon } from '@chakra-ui/icons';
 import { useAuth } from '../../context/AuthContext';

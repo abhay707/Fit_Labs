@@ -15,7 +15,6 @@ import {
 } from '@chakra-ui/react';
 import { useState } from 'react';
 import { useAuth } from '../../context/AuthContext';
-import workoutImage from '../../assets/workout.svg';
 
 interface InjuryFormProps {
   onSubmit: (injury: string) => void;
@@ -34,16 +33,13 @@ export const InjuryForm = ({ onSubmit, onGoalSelect }: InjuryFormProps) => {
   };
 
   return (
-    <Box width="100%" maxW="500px" p={4} mx="auto">
-      <VStack spacing={8} align="stretch">
+    <Box width="100%" maxW="500px" p={4} mx="auto" display="flex" justifyContent="center" alignItems="center" minHeight="calc(100vh - 100px)">
+      <VStack spacing={8} align="stretch" width="100%">
         <Box textAlign="center">
           <Heading size="lg">Exercise Recommendations</Heading>
           <Text mt={2} color="gray.600">
             Get personalized exercise recommendations based on your needs
           </Text>
-          <Box mt={4} mb={4} display="flex" justifyContent="center">
-            <img src={workoutImage} alt="Workout" width="150px" height="150px" />
-          </Box>
         </Box>
 
         <Tabs isFitted variant="enclosed" colorScheme="blue">

@@ -48,7 +48,7 @@ interface AuthProviderProps {
 export const AuthProvider = ({ children }: AuthProviderProps) => {
   const [user, setUser] = useState<User | null>(null);
 
-  const login = async (email: string, password: string) => {
+  const login = async (email: string) => {
     // TODO: Implement actual authentication logic
     // For now, simulate a successful login
     setUser({ email, id: '1' });
@@ -58,6 +58,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
     // TODO: Implement actual signup logic
     // For now, simulate a successful signup
     setUser({ email, id: '1', profile });
+    password;
   };
 
   const logout = () => {
